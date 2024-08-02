@@ -48,7 +48,7 @@ for valve in valves:
                 distances[valve][neighbour] = distance + 1
             queue.append((distance + 1, neighbour))
 
-print(distances)
+#print(distances)
 
 
 
@@ -60,12 +60,12 @@ def dfs(time, valve, visitedValves):
     for neighbour in distances[valve]:
         if neighbour in visitedValves:
             continue
-        remainingTime = time - distances[valve][neighbour] - 1
-        if remainingTime <= 0:
+        remainingTime = time - distances[valve][neighbour] - 1      #calculate the remaining time after moving to and opening the neighbouring valve
+        if remainingTime <= 0:                                      #skip the valve if there is no time left
             continue
         visitedValves.add(neighbour)
         maxPressure = max(maxPressure, dfs(remainingTime, neighbour, visitedValves) + valves[neighbour][0] * remainingTime)
-        visitedValves.remove(neighbour)  # remove the neighbour from visitedValves after the recursive call
+        visitedValves.remove(neighbour)                 #remove the neighbour from visitedValves after the recursive call, because the same valve can be visited again in a different path
     return maxPressure
 
 print(dfs(30,'AA', visitedValves))
