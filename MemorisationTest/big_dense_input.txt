@@ -1,0 +1,10 @@
+Valve AA has flow rate=2; tunnels lead to valves BB, CC, DD, EE, FF, GG, HH, II, JJ
+Valve BB has flow rate=13; tunnels lead to valves AA, CC, DD, EE, FF, GG, HH, II, JJ
+Valve CC has flow rate=2; tunnels lead to valves AA, BB, DD, EE, FF, GG, HH, II, JJ
+Valve DD has flow rate=20; tunnels lead to valves AA, BB, CC, EE, FF, GG, HH, II, JJ
+Valve EE has flow rate=3; tunnels lead to valves AA, BB, CC, DD, FF, GG, HH, II, JJ
+Valve FF has flow rate=2; tunnels lead to valves AA, BB, CC, DD, EE, GG, HH, II, JJ
+Valve GG has flow rate=2; tunnels lead to valves AA, BB, CC, DD, EE, FF, HH, II, JJ
+Valve HH has flow rate=22; tunnel leads to valve AA, BB, CC, DD, EE, FF, GG, II, JJ
+Valve II has flow rate=2; tunnels lead to valves AA, BB, CC, DD, EE, FF, GG, HH, JJ
+Valve JJ has flow rate=22; tunnel leads to valve AA, BB, CC, DD, EE, FF, GG, HH, II
